@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		482351D820D938280048F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482351D720D938280048F866 /* AppDelegate.swift */; };
+		482351DA20D938280048F866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482351D920D938280048F866 /* ViewController.swift */; };
+		482351DD20D938280048F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482351DB20D938280048F866 /* Main.storyboard */; };
+		482351E020D938280048F866 /* wopinBLEDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 482351DE20D938280048F866 /* wopinBLEDemo.xcdatamodeld */; };
+		482351E220D9382A0048F866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482351E120D9382A0048F866 /* Assets.xcassets */; };
+		482351E520D9382A0048F866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482351E320D9382A0048F866 /* LaunchScreen.storyboard */; };
+		482351ED20D938CF0048F866 /* BLE in Resources */ = {isa = PBXBuildFile; fileRef = 482351EC20D938CF0048F866 /* BLE */; };
+		482351F820D965730048F866 /* WopinCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482351F720D965730048F866 /* WopinCommand.swift */; };
+		482351F920D9DCC30048F866 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482351EF20D939160048F866 /* CoreBluetooth.framework */; };
+		482351FB20D9DCCE0048F866 /* libBLEManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 482351FA20D9DCCE0048F866 /* libBLEManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		482351D420D938280048F866 /* wopinBLEDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wopinBLEDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		482351D720D938280048F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		482351D920D938280048F866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		482351DC20D938280048F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		482351DF20D938280048F866 /* wopinBLEDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wopinBLEDemo.xcdatamodel; sourceTree = "<group>"; };
+		482351E120D9382A0048F866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		482351E420D9382A0048F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		482351E620D9382A0048F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		482351EC20D938CF0048F866 /* BLE */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BLE; path = ../../BLE; sourceTree = "<group>"; };
+		482351EF20D939160048F866 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		482351F220D939CF0048F866 /* libBLEManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBLEManager.a; path = ../BLE/libBLEManager.a; sourceTree = "<group>"; };
+		482351F420D93C490048F866 /* wopinBLEDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wopinBLEDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		482351F720D965730048F866 /* WopinCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WopinCommand.swift; sourceTree = "<group>"; };
+		482351FA20D9DCCE0048F866 /* libBLEManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBLEManager.a; path = BLE/libBLEManager.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		482351D120D938280048F866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482351FB20D9DCCE0048F866 /* libBLEManager.a in Frameworks */,
+				482351F920D9DCC30048F866 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		482351CB20D938280048F866 = {
+			isa = PBXGroup;
+			children = (
+				482351D620D938280048F866 /* wopinBLEDemo */,
+				482351D520D938280048F866 /* Products */,
+				482351EE20D939160048F866 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		482351D520D938280048F866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				482351D420D938280048F866 /* wopinBLEDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		482351D620D938280048F866 /* wopinBLEDemo */ = {
+			isa = PBXGroup;
+			children = (
+				482351EC20D938CF0048F866 /* BLE */,
+				482351D720D938280048F866 /* AppDelegate.swift */,
+				482351D920D938280048F866 /* ViewController.swift */,
+				482351DB20D938280048F866 /* Main.storyboard */,
+				482351E120D9382A0048F866 /* Assets.xcassets */,
+				482351E320D9382A0048F866 /* LaunchScreen.storyboard */,
+				482351E620D9382A0048F866 /* Info.plist */,
+				482351DE20D938280048F866 /* wopinBLEDemo.xcdatamodeld */,
+				482351F420D93C490048F866 /* wopinBLEDemo-Bridging-Header.h */,
+				482351F720D965730048F866 /* WopinCommand.swift */,
+			);
+			path = wopinBLEDemo;
+			sourceTree = "<group>";
+		};
+		482351EE20D939160048F866 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482351F220D939CF0048F866 /* libBLEManager.a */,
+				482351FA20D9DCCE0048F866 /* libBLEManager.a */,
+				482351EF20D939160048F866 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		482351D320D938280048F866 /* wopinBLEDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 482351E920D9382A0048F866 /* Build configuration list for PBXNativeTarget "wopinBLEDemo" */;
+			buildPhases = (
+				482351D020D938280048F866 /* Sources */,
+				482351D120D938280048F866 /* Frameworks */,
+				482351D220D938280048F866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wopinBLEDemo;
+			productName = wopinBLEDemo;
+			productReference = 482351D420D938280048F866 /* wopinBLEDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		482351CC20D938280048F866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Lai kwok tai";
+				TargetAttributes = {
+					482351D320D938280048F866 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 482351CF20D938280048F866 /* Build configuration list for PBXProject "wopinBLEDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 482351CB20D938280048F866;
+			productRefGroup = 482351D520D938280048F866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				482351D320D938280048F866 /* wopinBLEDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		482351D220D938280048F866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482351E520D9382A0048F866 /* LaunchScreen.storyboard in Resources */,
+				482351E220D9382A0048F866 /* Assets.xcassets in Resources */,
+				482351ED20D938CF0048F866 /* BLE in Resources */,
+				482351DD20D938280048F866 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		482351D020D938280048F866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482351DA20D938280048F866 /* ViewController.swift in Sources */,
+				482351F820D965730048F866 /* WopinCommand.swift in Sources */,
+				482351E020D938280048F866 /* wopinBLEDemo.xcdatamodeld in Sources */,
+				482351D820D938280048F866 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		482351DB20D938280048F866 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				482351DC20D938280048F866 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		482351E320D9382A0048F866 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				482351E420D9382A0048F866 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		482351E720D9382A0048F866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		482351E820D9382A0048F866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		482351EA20D9382A0048F866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MM68XSJAZJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/BLE";
+				INFOPLIST_FILE = wopinBLEDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/BLE";
+				PRODUCT_BUNDLE_IDENTIFIER = wopin.wopinBLEDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/wopinBLEDemo/wopinBLEDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		482351EB20D9382A0048F866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MM68XSJAZJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/BLE";
+				INFOPLIST_FILE = wopinBLEDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/BLE";
+				PRODUCT_BUNDLE_IDENTIFIER = wopin.wopinBLEDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/wopinBLEDemo/wopinBLEDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		482351CF20D938280048F866 /* Build configuration list for PBXProject "wopinBLEDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				482351E720D9382A0048F866 /* Debug */,
+				482351E820D9382A0048F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		482351E920D9382A0048F866 /* Build configuration list for PBXNativeTarget "wopinBLEDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				482351EA20D9382A0048F866 /* Debug */,
+				482351EB20D9382A0048F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		482351DE20D938280048F866 /* wopinBLEDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				482351DF20D938280048F866 /* wopinBLEDemo.xcdatamodel */,
+			);
+			currentVersion = 482351DF20D938280048F866 /* wopinBLEDemo.xcdatamodel */;
+			path = wopinBLEDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 482351CC20D938280048F866 /* Project object */;
+}
