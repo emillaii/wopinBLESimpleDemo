@@ -173,5 +173,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         connectionStateLabel.text = "Disconnected"
         connectedDevice = nil
     }
+
+    //Some data will be received here....Let process that later...
+    func receiveDeviceDataSuccess_1(_ data: Data!, device: CBPeripheral!) {
+        let bytes = [UInt8] (data as Data)
+        var hexString = ""
+        for byte in bytes {
+            hexString = hexString.appendingFormat("%02X", UInt(byte))
+        }
+        print("Received some data: \(hexString)")
+    }
+    
 }
 

@@ -22,7 +22,7 @@ struct WopinCommand {
 func hydroGenTimerCommand(min: Int, sec: Int) -> String {
     let minuteStr = String(format:"%02X", min)
     let secondStr = String(format:"%02X", sec)
-    return "AABBCC02" + minuteStr + secondStr + "BBCC"
+    return "AABBCC02" + minuteStr + secondStr + "BBAA"
 }
 
 func wopinLEDCommand(r: Int, g: Int, b: Int) -> String {
